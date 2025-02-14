@@ -1,17 +1,16 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "./task_manager_app.py",
-        "use": "@vercel/python",
-        "config": { "runtime": "python3.6" }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "./task_manager_app.py",
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.9" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "task_manager_app.py"
+    }
+  ]
+}
